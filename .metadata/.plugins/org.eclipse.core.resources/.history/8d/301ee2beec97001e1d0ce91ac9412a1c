@@ -1,0 +1,201 @@
+package final_exam;
+
+import java.util.Scanner;
+
+public class CountCharTest2 {
+    public static void main(String[] args) {
+    	System.out.println("B반 202335053 노정운");
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("문자열을 입력하세요 (종료는 end) : ");
+        String word = sc.nextLine();
+
+        char[] arr = new char[word.length()];
+
+        System.out.print("입력 문자열은 ");
+        for (int i = 0; i < word.length(); i++) {
+            arr[i] = word.charAt(i);
+            if (!(i == arr.length - 1)) {
+                System.out.print(arr[i] + "");
+            } else {
+                System.out.print(arr[i]);
+            }
+        }
+        System.out.println("이고 길이는 " + arr.length + "입니다.");
+        
+        
+        for (int i = 0; i < word.length(); i++) {
+            arr[i] = word.charAt(i);
+            
+            if (arr[i] == 'A') {
+               System.out.println("A : " + countChar(word, 'A') + "번 포함");
+            }
+            else if (arr[i] == 'B') {
+            	System.out.println("B : " + countChar(word, 'B') + "번 포함");
+            }	
+            else if (arr[i] == 'C') {
+            	System.out.println("C : " + countChar(word, 'C') + "번 포함");
+            }
+            else if (arr[i] == 'D') {
+            	System.out.println("D : " + countChar(word, 'D')+ "번 포함");
+            } 
+            else if (arr[i] == 'E') {
+            	System.out.println("E : " + countChar(word, 'E')+ "번 포함");
+            }
+            else if (arr[i] == 'F') {
+            	System.out.println("F : " + countChar(word, 'F')+ "번 포함");
+            }
+            else if (arr[i] == 'G') {
+            	System.out.println("G : " + countChar(word, 'G')+ "번 포함");
+            }
+            else if (arr[i] == 'H') {
+            	System.out.println("H : " + countChar(word, 'H')+ "번 포함");
+            }
+            else if (arr[i] == 'I') {
+            	System.out.println("I : " + countChar(word, 'I')+ "번 포함");
+            }
+            else if (arr[i] == 'J') {
+            	System.out.println("J : " + countChar(word, 'J')+ "번 포함");
+            }
+            else if (arr[i] == 'K') {
+            	System.out.println("K : " + countChar(word, 'K')+ "번 포함");
+            }
+            else if (arr[i] == 'L') {
+            	System.out.println("L : " + countChar(word, 'L')+ "번 포함");
+            }
+            else if (arr[i] == 'M') {
+            	System.out.println("M : " + countChar(word, 'M')+ "번 포함");
+            }
+            else if (arr[i] == 'N') {
+            	System.out.println("N : " + countChar(word, 'N')+ "번 포함");
+            }
+            else if (arr[i] == 'O') {
+            	System.out.println("O : " + countChar(word, 'O')+ "번 포함");
+            }
+            else if (arr[i] == 'P') {
+            	System.out.println("P : " + countChar(word, 'P')+ "번 포함");
+            }
+            else if (arr[i] == 'Q') {
+            	System.out.println("Q : " + countChar(word, 'Q')+ "번 포함");
+            }
+            else if (arr[i] == 'R') {
+            	System.out.println("R : " + countChar(word, 'R')+ "번 포함");
+            }
+            else if (arr[i] == 'S') {
+            	System.out.println("S : " + countChar(word, 'S')+ "번 포함");
+            }
+            else if (arr[i] == 'T') {
+            	System.out.println("T : " + countChar(word, 'T')+ "번 포함");
+            }
+            else if (arr[i] == 'U') {
+            	System.out.println("U : " + countChar(word, 'U')+ "번 포함");
+            }
+            else if (arr[i] == 'V') {
+            	System.out.println("V : " + countChar(word, 'V')+ "번 포함");
+            }
+            else if (arr[i] == 'W') {
+            	System.out.println("W : " + countChar(word, 'W')+ "번 포함");
+            }
+            else if (arr[i] == 'X') {
+            	System.out.println("X : " + countChar(word, 'X')+ "번 포함");
+            }
+            else if (arr[i] == 'Y') {
+            	System.out.println("Y : " + countChar(word, 'Y')+ "번 포함");
+            }
+            else if (arr[i] == 'Z') {
+            	System.out.println("Z : " + countChar(word, 'Z')+ "번 포함");
+            }
+            else if (arr[i] == 'a') {
+            	System.out.println("a : " + countChar(word, 'a')+ "번 포함");
+            }
+            else if (arr[i] == 'b') {
+            	System.out.println("b : " + countChar(word, 'b')+ "번 포함");
+            }
+            else if (arr[i] == 'c') {
+            	System.out.println("c : " + countChar(word, 'c')+ "번 포함");
+            }
+            else if (arr[i] == 'd') {
+            	System.out.println("d : " + countChar(word, 'd')+ "번 포함");
+            }
+            else if (arr[i] == 'e') {
+            	System.out.println("e : " + countChar(word, 'e')+ "번 포함");
+            }
+            else if (arr[i] == 'f') {
+            	System.out.println("f : " + countChar(word, 'f')+ "번 포함");
+            }
+            else if (arr[i] == 'g') {
+            	System.out.println("g : " + countChar(word, 'g')+ "번 포함");
+            }
+            else if (arr[i] == 'h') {
+            	System.out.println("h : " + countChar(word, 'h')+ "번 포함");
+            }
+            else if (arr[i] == 'i') {
+            	System.out.println("i : " + countChar(word, 'i')+ "번 포함");
+            }
+            else if (arr[i] == 'j') {
+            	System.out.println("j : " + countChar(word, 'j')+ "번 포함");
+            }
+            else if (arr[i] == 'k') {
+            	System.out.println("k : " + countChar(word, 'k')+ "번 포함");
+            }
+            else if (arr[i] == 'l') {
+            	System.out.println("l : " + countChar(word, 'l')+ "번 포함");
+            }
+            else if (arr[i] == 'm') {
+            	System.out.println("m : " + countChar(word, 'm')+ "번 포함");
+            }
+            else if (arr[i] == 'n') {
+            	System.out.println("n : " + countChar(word, 'n')+ "번 포함");
+            }
+            else if (arr[i] == 'o') {
+            	System.out.println("o : " + countChar(word, 'o')+ "번 포함");
+            }
+            else if (arr[i] == 'p') {
+            	System.out.println("p : " + countChar(word, 'p')+ "번 포함");
+            }
+            else if (arr[i] == 'q') {
+            	System.out.println("q : " + countChar(word, 'q')+ "번 포함");
+            }
+            else if (arr[i] == 'r') {
+            	System.out.println("r : " + countChar(word, 'r')+ "번 포함");
+            }
+            else if (arr[i] == 's') {
+            	System.out.println("s : " + countChar(word, 's')+ "번 포함");
+            }
+            else if (arr[i] == 't') {
+            	System.out.println("t : " + countChar(word, 't')+ "번 포함");
+            }
+            else if (arr[i] == 'u') {
+            	System.out.println("u : " + countChar(word, 'u')+ "번 포함");
+            }
+            else if (arr[i] == 'v') {
+            	System.out.println("v : " + countChar(word, 'v')+ "번 포함");
+            }
+            else if (arr[i] == 'w') {
+            	System.out.println("w : " + countChar(word, 'w')+ "번 포함");
+            }
+            else if (arr[i] == 'x') {
+            	System.out.println("x : " + countChar(word, 'x')+ "번 포함");
+            }
+            else if (arr[i] == 'y') {
+            	System.out.println("y : " + countChar(word, 'y')+ "번 포함");
+            }
+            else if (arr[i] == 'z') {
+            	System.out.println("z : " + countChar(word, 'z')+ "번 포함");
+            }
+        }
+        
+
+    }
+
+    public static int countChar(String word, char ch) {
+        int count = 0;
+        for (int i = 0; i < word.length(); i++) {
+            if (word.charAt(i) == ch) {
+                count++;
+            }
+        }
+        return count;
+    }
+}
+

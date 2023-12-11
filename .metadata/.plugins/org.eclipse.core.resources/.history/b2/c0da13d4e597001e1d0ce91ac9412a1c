@@ -1,0 +1,47 @@
+package final_exam;
+
+import java.util.Scanner;
+
+public class CountCharTest2 {
+    public static void main(String[] args) {
+
+    	 // Scanner로 입력값 받기
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("문자열을 입력하세요 (종료는 end) : ");
+        String word = sc.nextLine();  // String 타입이므로 .nextLine()을 사용
+        
+        // 각 철자를 하나씩 저장해야 하므로 char 배열을 사용
+        // 입력값에 따라 문자열의 길이가 달라지므로 .length를 사용
+        char[] arr = new char[word.length()];
+        
+        for(int i = 0; i < word.length(); i++) {
+        
+            // 문자 "배열"의 i번째 = 문자열의 i번째에 있는 값
+            arr[i] = word.charAt(i);
+            
+            // 마지막 문자가 출력될 때 ','(콤마)를 출력하지 않게. 
+            //   -> ','를 출력하는 경우와 하지 않는 경우로 나누어야 함.
+            // 인덱스는 0부터 시작하므로 마지막 인덱스값을 출력하려면 .length-1
+            if(!(i == arr.length-1)) {
+                System.out.print(arr[i] + ", ");
+            }
+            else {
+                System.out.print(arr[i]);
+            }
+        }
+        System.out.println("철자의 개수는" + arr.length + "개입니다.");
+        
+        System.out.println(countChar(word, 'a'));
+
+    }
+    public static int countChar(String word, char ch) {
+    	int count = 0;
+    	for (int i = 0; i < word.length(); i ++) {
+    		if(word.charAt(i) == ch) {
+    			count ++;
+    		}
+    	}
+    	return count;
+    }
+}

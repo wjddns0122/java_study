@@ -1,0 +1,37 @@
+package chap09;
+
+class Printer3 {
+	private int numOfPapers;
+	private boolean duplex;
+	
+	public Printer3(int numOfPapers, boolean duplex) {
+		this.numOfPapers = numOfPapers;
+		this.duplex = duplex;
+	}
+	
+	public void print3(int amount) {
+		if (duplex == true) {
+			if ((amount / 2) == 0) {
+				numOfPapers -= amount /2;
+				System.out.printf("양면으로 %d장 출력했습니다. 현재 %d장 남으셨습니다. \n", (amount / 2), numOfPapers);
+			}
+		}
+	}
+	
+	public boolean getDuplex() {
+		
+	}
+	
+	public void setDuplex(boolean duplex) {
+		
+	}
+}
+
+public class PrinterDemo3 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
